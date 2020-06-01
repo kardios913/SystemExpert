@@ -93,7 +93,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label1.setText("¿Usted tiene tos?");
 
-        btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Escalosfrios.jpg"))); // NOI18N
         btn1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn1.setIconTextGap(-4);
@@ -105,7 +105,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label2.setText("¿Usted tiene escalosfrios?");
 
-        btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Diarrea.jpg"))); // NOI18N
         btn2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn2.setIconTextGap(-4);
@@ -117,7 +117,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label3.setText("¿Ha tenido diarrea?");
 
-        btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Dolor de garganta.jpg"))); // NOI18N
         btn3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn3.setIconTextGap(-4);
@@ -131,7 +131,7 @@ public class FormTest extends javax.swing.JFrame {
 
         jLabel2.setText("Has click sobre la imagen segun tus sintomas");
 
-        btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Dolor de cabeza.jpg"))); // NOI18N
         btn5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn5.setIconTextGap(-4);
@@ -143,7 +143,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label5.setText("¿Tiene dolor de cabeza?");
 
-        btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Fiebre.jpg"))); // NOI18N
         btn6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn6.setIconTextGap(-4);
@@ -153,7 +153,7 @@ public class FormTest extends javax.swing.JFrame {
             }
         });
 
-        btn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Dolor muscular.jpg"))); // NOI18N
         btn4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn4.setIconTextGap(-4);
@@ -165,7 +165,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label6.setText("¿Ha tenido fiebre ");
 
-        btn7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Dificultad para respirar.jpg"))); // NOI18N
         btn7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn7.setIconTextGap(-4);
@@ -189,7 +189,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label13.setText("infectadas por Covid 19?");
 
-        btn9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Ha_Viajado.jpg"))); // NOI18N
         btn9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn9.setIconTextGap(-4);
@@ -203,7 +203,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label15.setText("¿Ha viajado en los");
 
-        btn10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Areas_infectadas_covid.jpg"))); // NOI18N
         btn10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn10.setIconTextGap(-4);
@@ -213,7 +213,7 @@ public class FormTest extends javax.swing.JFrame {
             }
         });
 
-        btn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Cansancio.png"))); // NOI18N
         btn8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn8.setIconTextGap(-4);
@@ -225,7 +225,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label16.setText("¿Ha visitado áreas ");
 
-        btn11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
+        btn11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Ha_visitado.jpg"))); // NOI18N
         btn11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn11.setIconTextGap(-4);
@@ -340,14 +340,13 @@ public class FormTest extends javax.swing.JFrame {
                                         .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(40, 40, 40)
-                                .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
