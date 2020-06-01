@@ -15,10 +15,10 @@ import model.PreguntaVO;
  * @author KRLOS
  */
 public class MediadorConexion {
-    
+
     public MediadorConexion() {
     }
-    
+
     public PreguntaVO resultQuestion(PreguntaVO preguntaVO) {
         try {
             System.out.println("Iniciando");
@@ -26,11 +26,11 @@ public class MediadorConexion {
             Query con = new Query(conexion);
             System.out.println(conexion + " " + con.hasMoreSolutions());
             String respuesta = preguntaVO.isRespuesta() ? "si" : "no";
-            String querySi = "validarsi(" + preguntaVO.getId() +",'" + respuesta + "').";
+            String querySi = "validarsi(" + preguntaVO.getId() + ",'" + respuesta + "').";
             //String querySi = "validarsi(" + preguntaVO.getId() +",'" + respuesta + "').";
             Query validarSi = new Query(querySi);
             System.out.println(querySi + " " + validarSi.hasMoreSolutions());
-            String queryNo = "validarno(" + preguntaVO.getId() +",'" + respuesta + "').";
+            String queryNo = "validarno(" + preguntaVO.getId() + ",'" + respuesta + "').";
             if (validarSi.hasMoreSolutions()) {
                 preguntaVO.setPuntosObtenidos(preguntaVO.getPuntos());
             }
@@ -39,12 +39,13 @@ public class MediadorConexion {
             if (validarNo.hasMoreSolutions()) {
                 preguntaVO.setPuntosObtenidos(0);
             }
-            
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
         return preguntaVO;
     }
+
     public List<PreguntaVO> listaPreguntaDefault() {
         List<PreguntaVO> lista = new ArrayList<>();
         PreguntaVO preguntaVO = new PreguntaVO();
@@ -136,7 +137,18 @@ public class MediadorConexion {
 
     public String indicaciones(List<PreguntaVO> lista) {
         String cad = "";
-        if (lista != null  && lista.size() > 0) {
+        String resultDiagnostico = "'USTED PADECE COVID-19:\n"
+                + "TRATAMIENTO:\n"
+                + "En el momento no se recomienda ninguna medicacion para tratar covid-19.\n"
+                + "los antibioticos no son efectivos contra la infecciones virales.\n"
+                + "El tratamiento se centra en aliviar los sintomas, y quizas incluya.\n"
+                + "Analgesicos (ibuprofeno o acetaminofen).\n"
+                + "Jarabe o medicacion para la tos.\n"
+                + "Descanso.\n"
+                + "Tomar liquidos.\n"
+                + " Reportese de inmediato a epidemiologia, por su salud y la de su familia.\n"
+                + "'";
+        if (lista != null && lista.size() > 0) {
             int ptos = 0;
             String pegSi = "***Preguntas Positivas***";
             String pegNo = "\n***Preguntas Negativas***";
@@ -151,10 +163,10 @@ public class MediadorConexion {
             cad = pegSi + pegNo + "\n*** Puntos Obtenidos***\n " + ptos;
             cad += "\n***** Dagnostico *****";
             if (ptos > 12) {
-                cad += "\nReportese de inmediato a epidemiologia";
+                cad += "\n"+"\n"+resultDiagnostico;
             } else if (ptos > 6 && ptos <= 12) {
                 cad += "\nDebes ir a consulta medica";
-            } else if (ptos > 3  && ptos <= 6) {
+            } else if (ptos > 3 && ptos <= 6) {
                 cad += "\nHidratate adecuadamente, buena higiene personal, Obsérvese y revalore en dos días";
             } else {
                 cad += "\nPuede estar relacionado con estrés. Obsérvese";
