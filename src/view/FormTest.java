@@ -20,6 +20,7 @@ public class FormTest extends javax.swing.JFrame {
 
     private FormInicio inicio;
     private List<PreguntaVO> listaPreguntas;
+    private String indicaciones = "";
 
     /**
      * Creates new form FormText
@@ -242,6 +243,11 @@ public class FormTest extends javax.swing.JFrame {
         label19.setText("últimos 14 días?");
 
         btnFinalizar.setText("Finalizar Test");
+        btnFinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFinalizarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -331,23 +337,22 @@ public class FormTest extends javax.swing.JFrame {
                                 .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(10, 10, 10)
-                                        .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(40, 40, 40)
                                 .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
                                 .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(247, 247, 247))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -355,11 +360,10 @@ public class FormTest extends javax.swing.JFrame {
                         .addComponent(btnFinalizar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(437, 437, 437)
-                        .addComponent(jLabel2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(529, 529, 529)
-                .addComponent(jLabel1)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(529, 529, 529)
+                        .addComponent(jLabel1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -448,7 +452,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn0.setSelected(preguntaVO.isRespuesta());
         this.btn0.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(1, preguntaVO);
+        //this.listaPreguntas.set(1, preguntaVO);
         
     }//GEN-LAST:event_btn0ActionPerformed
 
@@ -459,7 +463,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn1.setSelected(preguntaVO.isRespuesta());
         this.btn1.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(1, preguntaVO);
+        //this.listaPreguntas.set(1, preguntaVO);
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
@@ -469,7 +473,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn2.setSelected(preguntaVO.isRespuesta());
         this.btn2.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(2, preguntaVO);
+        //this.listaPreguntas.set(2, preguntaVO);
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
@@ -479,7 +483,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn3.setSelected(preguntaVO.isRespuesta());
         this.btn3.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(3, preguntaVO);
+        //this.listaPreguntas.set(3, preguntaVO);
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
@@ -489,7 +493,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn5.setSelected(preguntaVO.isRespuesta());
         this.btn5.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(5, preguntaVO);
+        //this.listaPreguntas.set(5, preguntaVO);
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
@@ -499,7 +503,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn6.setSelected(preguntaVO.isRespuesta());
         this.btn6.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(6, preguntaVO);
+        //this.listaPreguntas.set(6, preguntaVO);
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
@@ -509,7 +513,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn4.setSelected(preguntaVO.isRespuesta());
         this.btn4.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(4, preguntaVO);
+        //this.listaPreguntas.set(4, preguntaVO);
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
@@ -519,7 +523,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn7.setSelected(preguntaVO.isRespuesta());
         this.btn7.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(7, preguntaVO);
+        //this.listaPreguntas.set(7, preguntaVO);
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
@@ -529,7 +533,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn9.setSelected(preguntaVO.isRespuesta());
         this.btn9.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(9, preguntaVO);
+        //this.listaPreguntas.set(9, preguntaVO);
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
@@ -539,7 +543,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn10.setSelected(preguntaVO.isRespuesta());
         this.btn10.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(10, preguntaVO);
+        //this.listaPreguntas.set(10, preguntaVO);
     }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
@@ -549,7 +553,7 @@ public class FormTest extends javax.swing.JFrame {
         this.btn8.setSelected(preguntaVO.isRespuesta());
         this.btn8.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(8, preguntaVO);
+        //this.listaPreguntas.set(8, preguntaVO);
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
@@ -559,8 +563,16 @@ public class FormTest extends javax.swing.JFrame {
         this.btn11.setSelected(preguntaVO.isRespuesta());
         this.btn11.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
-        this.listaPreguntas.set(11, preguntaVO);
+        //this.listaPreguntas.set(11, preguntaVO);
     }//GEN-LAST:event_btn11ActionPerformed
+
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
+        // TODO add your handling code here:
+        this.indicaciones = this.inicio.getFachada().indicaciones(this.listaPreguntas);
+        FormIndicaciones obj = new FormIndicaciones(this, indicaciones);
+        obj.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnFinalizarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

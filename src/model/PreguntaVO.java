@@ -14,6 +14,7 @@ public class PreguntaVO {
     private boolean respuesta;
     private int puntos;
     private int id;
+    private int puntosObtenidos;
 
     public String getPregunta() {
         return pregunta;
@@ -46,6 +47,13 @@ public class PreguntaVO {
     public void setId(int id) {
         this.id = id;
     }
-    
+
+    public int getPuntosObtenidos() {
+        return puntosObtenidos;
+    }
+
+    public void setPuntosObtenidos(int puntosObtenidos) {
+        this.puntosObtenidos = puntosObtenidos;
+    }
     
 }

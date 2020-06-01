@@ -43,4 +43,8 @@ public class Fachada {
     public List<PreguntaVO> listaPreguntas() {
         return mediadorConexion.listaPreguntaDefault();
     }
+
+    public String indicaciones(List<PreguntaVO> lista) {
+        return mediadorConexion.indicaciones(lista);
+    }
 }
