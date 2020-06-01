@@ -138,17 +138,27 @@ public class MediadorConexion {
         String cad = "";
         if (lista != null  && lista.size() > 0) {
             int ptos = 0;
-            String pegSi = "Preguntas marcadas como si";
-            String pegNo = "\nPreguntas marcadas como no";
+            String pegSi = "***Preguntas Positivas***";
+            String pegNo = "\n***Preguntas Negativas***";
             for (PreguntaVO preguntaVO : lista) {
                 if (preguntaVO.isRespuesta()) {
-                    pegSi += "\n" + preguntaVO.getPregunta();
+                    pegSi += "\n " + preguntaVO.getPregunta();
                 } else {
-                    pegNo += "\n" + preguntaVO.getPregunta();
+                    pegNo += "\n " + preguntaVO.getPregunta();
                 }
                 ptos += preguntaVO.getPuntosObtenidos();
             }
-            cad = pegSi + pegNo + "\npuntos obtenido" + ptos;
+            cad = pegSi + pegNo + "\n*** Puntos Obtenidos***\n " + ptos;
+            cad += "\n***** Dagnostico *****";
+            if (ptos > 12) {
+                cad += "\nReportese de inmediato a epidemiologia";
+            } else if (ptos > 6 && ptos <= 12) {
+                cad += "\nDebes ir a consulta medica";
+            } else if (ptos > 3  && ptos <= 6) {
+                cad += "\nHidratate adecuadamente, buena higiene personal, Obsérvese y revalore en dos días";
+            } else {
+                cad += "\nPuede estar relacionado con estrés. Obsérvese";
+            }
         }
         return cad;
     }
