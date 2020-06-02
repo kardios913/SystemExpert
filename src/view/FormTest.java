@@ -6,6 +6,7 @@
 package view;
 
 import fachada.Fachada;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
@@ -82,6 +83,7 @@ public class FormTest extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 153));
         jLabel1.setText("Test");
 
+        btn0.setBackground(new java.awt.Color(255, 255, 255));
         btn0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1_tos.jpg"))); // NOI18N
         btn0.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn0.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -94,6 +96,7 @@ public class FormTest extends javax.swing.JFrame {
 
         label1.setText("¿Usted tiene tos?");
 
+        btn1.setBackground(new java.awt.Color(255, 255, 255));
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Escalosfrios.jpg"))); // NOI18N
         btn1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -449,6 +452,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(0);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn0.setBackground(Color.GREEN);
+        } else {
+            this.btn0.setBackground(Color.WHITE);
+        }
         this.btn0.setSelected(preguntaVO.isRespuesta());
         this.btn0.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -460,6 +468,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(1);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn1.setBackground(Color.GREEN);
+        } else {
+            this.btn1.setBackground(Color.WHITE);
+        }
         this.btn1.setSelected(preguntaVO.isRespuesta());
         this.btn1.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -470,6 +483,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:}
         PreguntaVO preguntaVO = this.listaPreguntas.get(2);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn2.setBackground(Color.GREEN);
+        } else {
+            this.btn2.setBackground(Color.WHITE);
+        }
         this.btn2.setSelected(preguntaVO.isRespuesta());
         this.btn2.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -480,6 +498,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(3);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn3.setBackground(Color.GREEN);
+        } else {
+            this.btn3.setBackground(Color.WHITE);
+        }
         this.btn3.setSelected(preguntaVO.isRespuesta());
         this.btn3.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -490,6 +513,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(5);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn5.setBackground(Color.GREEN);
+        } else {
+            this.btn5.setBackground(Color.WHITE);
+        }
         this.btn5.setSelected(preguntaVO.isRespuesta());
         this.btn5.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -500,6 +528,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(6);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn6.setBackground(Color.GREEN);
+        } else {
+            this.btn6.setBackground(Color.WHITE);
+        }
         this.btn6.setSelected(preguntaVO.isRespuesta());
         this.btn6.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -510,6 +543,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(4);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn4.setBackground(Color.GREEN);
+        } else {
+            this.btn4.setBackground(Color.WHITE);
+        }
         this.btn4.setSelected(preguntaVO.isRespuesta());
         this.btn4.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -520,6 +558,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(7);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn7.setBackground(Color.GREEN);
+        } else {
+            this.btn7.setBackground(Color.WHITE);
+        }
         this.btn7.setSelected(preguntaVO.isRespuesta());
         this.btn7.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -530,6 +573,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(9);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn9.setBackground(Color.GREEN);
+        } else {
+            this.btn9.setBackground(Color.WHITE);
+        }
         this.btn9.setSelected(preguntaVO.isRespuesta());
         this.btn9.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -540,6 +588,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(10);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn10.setBackground(Color.GREEN);
+        } else {
+            this.btn10.setBackground(Color.WHITE);
+        }
         this.btn10.setSelected(preguntaVO.isRespuesta());
         this.btn10.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -550,6 +603,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(8);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn8.setBackground(Color.GREEN);
+        } else {
+            this.btn8.setBackground(Color.WHITE);
+        }
         this.btn8.setSelected(preguntaVO.isRespuesta());
         this.btn8.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);
@@ -560,6 +618,11 @@ public class FormTest extends javax.swing.JFrame {
         // TODO add your handling code here:
         PreguntaVO preguntaVO = this.listaPreguntas.get(11);
         preguntaVO.setRespuesta(!preguntaVO.isRespuesta());
+        if (preguntaVO.isRespuesta()) {
+            this.btn11.setBackground(Color.GREEN);
+        } else {
+            this.btn11.setBackground(Color.WHITE);
+        }
         this.btn11.setSelected(preguntaVO.isRespuesta());
         this.btn11.setOpaque(preguntaVO.isRespuesta());
         preguntaVO = this.inicio.getFachada().resultQuestion(preguntaVO);

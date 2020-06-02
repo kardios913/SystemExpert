@@ -150,8 +150,8 @@ public class MediadorConexion {
                 + "'";
         if (lista != null && lista.size() > 0) {
             int ptos = 0;
-            String pegSi = "***Preguntas Positivas***";
-            String pegNo = "\n***Preguntas Negativas***";
+            String pegSi = "";
+            String pegNo = "";
             for (PreguntaVO preguntaVO : lista) {
                 if (preguntaVO.isRespuesta()) {
                     pegSi += "\n " + preguntaVO.getPregunta();
@@ -160,9 +160,14 @@ public class MediadorConexion {
                 }
                 ptos += preguntaVO.getPuntosObtenidos();
             }
-            cad = pegSi + pegNo + "\n****Puntos Obtenidos****"
+            pegSi = pegSi.isEmpty() ? "*******Preguntas Marcadas*******" +
+                    "\nNo has marcado ningun sintoma" : "*******Preguntas Marcadas*******" + pegSi;
+            pegNo = pegNo.isEmpty() ? "\n*******Preguntas No Marcadas*******" + "\nTodos los sintomas han sido marcados" : "\n*******Preguntas No Marcadas*******" + pegNo;
+            cad = pegSi 
+                    + pegNo
+                    + "\n*******Puntos Obtenidos*******"
                     + "\n           " +  ptos;
-            cad += "\n***** Dagnostico *****";
+            cad += "\n*******Dagnostico*******";
             if (ptos > 12) {
                 cad += "\n"+resultDiagnostico;
             } else if (ptos > 6 && ptos <= 12) {
