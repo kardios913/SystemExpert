@@ -1,25 +1,12 @@
 
-# Título del Proyecto
+<h1>SystemExpert</h1>
 
-_Acá va un párrafo que describa lo que es el proyecto_
+<span>System Expert es un pequeño test con el cual se pretende por medio de una serie de preguntas dar un diagnostico con respecto al COVID19.</span>
 
-## Comenzando 🚀
+<h2>Comenzando 🚀</h2>
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
-
-### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+<span>para realizar tu test SystemExpert tienes dos opciones.</span>
+<span>  1. Descargar el código fuente.<b>Opcion 1</b></span>
+<span>  2. Descargar nuestro jar.</b>Opcion 2</b></span>
+<h3>Opción 1📋</h3>
+<span>esta opción consiste en hacer un fork a este repositorio</span> 
