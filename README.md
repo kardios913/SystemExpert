@@ -13,16 +13,16 @@
 <span>Esta opción consiste en hacer un fork a este repositorio</span> 
 <h4>Requisitos Opción 1</h4>
 <ul>
-  <li>Tener Java7 o superior en el equipo y haber configurado PATH. Para más información acerca de este proceso puede consultar dando click <a href="https://www.java.com/es/download/help/index_installing.xml">Aquí</a>.
+  <li>Tener Java7 o superior en el equipo y haber configurado PATH. Para más información acerca de este proceso puede consultar dando click <a href="https://www.java.com/es/download/help/index_installing.xml" target="_blank">Aquí</a>.
   </li>
-  <li>Instalar swi-prolog y configurar las PATH para su correcto funcionamiento. Para más información de este proceso puede consultar dando click <a href="https://www.swi-prolog.org/Download.html">Aquí</a>.
+  <li>Instalar swi-prolog y configurar las PATH para su correcto funcionamiento. Para más información de este proceso puede consultar dando click <a href="https://www.swi-prolog.org/Download.html" target="_blank">Aquí</a>.
   </li>
   <li>Tener instalado un IDE de desarrollo para Java.</li>
   <li>Abrir <b>SystemExpert</b> en el IDE de desarrollo.</li>
   <li>Ejecutar el proyecto</li>
 </ul>
 <h2>Opción 2</h2>
-<span>Esta opción es mas sencilla solo es descargar el archivo SystemExpert.jar dando click <a href="https://drive.google.com/file/d/1Kha25_P6tQ0N9mSlRCZT94rQjzbE8lSB/view?usp=sharing">Aquí</a></span>
+<span>Esta opción es mas sencilla solo es descargar el archivo SystemExpert.jar dando click <a href="https://drive.google.com/file/d/1Kha25_P6tQ0N9mSlRCZT94rQjzbE8lSB/view?usp=sharing" target="_blank">Aquí</a></span>
 <h2>Autores</h2>
 <ul>
   <li>Carlos Barrera</li>
