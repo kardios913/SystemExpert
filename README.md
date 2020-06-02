@@ -11,7 +11,7 @@
 <span>  2. Descargar nuestro jar. Ver <b>opción 2</b></span>
 <h2>Opción 1</h2>
 <span>Esta opción consiste en hacer un fork a este repositorio</span> 
-<h4>Requisitos Opción 1</h4>
+<h3>Requisitos</h3>
 <ul>
   <li>Tener Java7 o superior en el equipo y haber configurado PATH. Para más información acerca de este proceso puede consultar dando click <a href="https://www.java.com/es/download/help/index_installing.xml" target="_blank">Aquí</a>.
   </li>
