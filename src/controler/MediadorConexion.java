@@ -146,7 +146,7 @@ public class MediadorConexion {
                 + "Jarabe o medicacion para la tos.\n"
                 + "Descanso.\n"
                 + "Tomar liquidos.\n"
-                + " Reportese de inmediato a epidemiologia, por su salud y la de su familia.\n"
+                + " Reportese de inmediato a epidemiologia.\npor su salud y la de su familia.\n"
                 + "'";
         if (lista != null && lista.size() > 0) {
             int ptos = 0;
@@ -160,16 +160,19 @@ public class MediadorConexion {
                 }
                 ptos += preguntaVO.getPuntosObtenidos();
             }
-            cad = pegSi + pegNo + "\n*** Puntos Obtenidos***\n " + ptos;
+            cad = pegSi + pegNo + "\n****Puntos Obtenidos****"
+                    + "\n           " +  ptos;
             cad += "\n***** Dagnostico *****";
             if (ptos > 12) {
-                cad += "\n"+"\n"+resultDiagnostico;
+                cad += "\n"+resultDiagnostico;
             } else if (ptos > 6 && ptos <= 12) {
                 cad += "\nDebes ir a consulta medica";
             } else if (ptos > 3 && ptos <= 6) {
-                cad += "\nHidratate adecuadamente, buena higiene personal, Obsérvese y revalore en dos días";
+                cad += "\nHidratate adecuadamente, buena higiene personal.\nObsérvese y revalore en dos días";
+            } else if (ptos > 0 && ptos <= 3) {
+                cad += "\nPuede estar relacionado con estrés.\nObsérvese y revalore en dos días";
             } else {
-                cad += "\nPuede estar relacionado con estrés. Obsérvese";
+                cad += "\nNo presentas sintomas.\nObsérvese y revalore en dos días";
             }
         }
         return cad;
